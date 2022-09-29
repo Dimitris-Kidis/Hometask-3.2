@@ -24,7 +24,7 @@ namespace Hometask_3._2
             app.UseMiddleware<ComputerInfoMiddleware>();
             app.Run(async (context) =>
             {
-                await context.Response.WriteAsync("Hello World!");
+                await context.Response.WriteAsync("App is ON!");
             });
         }
     }

@@ -15,8 +15,8 @@
         {
             if (context.Request.Path.Value.ToLower() == "/time")
             {
-                context.Response.ContentType = "text/html; charset=utf-8";
-                    await context.Response.WriteAsync($"Текущее время: {_timeService?.Time}");
+                    await context.Response.WriteAsync($"Current Time: {_timeService?.Time}");
+                    await context.Response.WriteAsync($"\nCurrent Date: {DateTime.Today.ToString("dd/MM/yyyy")}");
             }
             else
             {
